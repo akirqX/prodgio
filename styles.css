@@ -3494,3 +3494,194 @@ cite small {
     height: 250px;
   }
 }
+
+.terms-block {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+.terms-block article {
+  background: var(--fundo-secundario);
+  border-left: 4px solid var(--primaria-clara);
+  padding: 2rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: var(--sombra);
+  transition: all 0.3s ease;
+}
+
+.terms-block article:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.terms-block h3 {
+  font-size: 1.3rem;
+  color: var(--texto-claro);
+  margin-bottom: 0.8rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.terms-block h3 span {
+  font-size: 1.4rem;
+  color: var(--primaria-clara);
+  font-weight: bold;
+}
+
+.terms-block p {
+  color: var(--texto-fraco);
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+/* Título com degradê centralizado */
+.section-title-gradient {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  background: linear-gradient(90deg, #1E73DA, #4ECDC4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  position: relative;
+}
+
+.section-title-gradient::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #1E73DA, #4ECDC4);
+  margin: 1.5rem auto 0;
+  border-radius: 2px;
+}
+
+/* Estilo dos blocos de termos */
+.terms-block {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+.terms-block article {
+  background: var(--fundo-secundario);
+  padding: 2rem 1.5rem 2rem 2rem;
+  border-radius: 10px;
+  box-shadow: var(--sombra);
+  position: relative;
+  border-left: 6px solid transparent;
+}
+
+.terms-block article::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 100%;
+  background: linear-gradient(180deg, #1E73DA, #4ECDC4);
+  border-radius: 4px;
+}
+
+/* Título dos termos com número em degradê */
+.terms-block h3 {
+  font-size: 1.3rem;
+  color: var(--texto-claro);
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.terms-block h3 span {
+  font-size: 1.4rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #1E73DA, #4ECDC4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.terms-block p {
+  color: var(--texto-fraco);
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+/* Estilo do título com degradê e centralizado corretamente */
+.section-title-gradient {
+  font-size: 2.5rem;
+  margin: 0 auto 2rem;
+  text-align: center;
+  background: linear-gradient(90deg, #1E73DA, #4ECDC4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: block;
+  width: fit-content;
+  position: relative;
+}
+
+/* Barrinha abaixo do título */
+.section-title-gradient::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #1E73DA, #4ECDC4);
+  margin: 1.5rem auto 0;
+  border-radius: 2px;
+}
+
+.back-link {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.btn-voltar {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #1E73DA, #4ECDC4);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(30, 115, 218, 0.2);
+}
+
+.btn-voltar:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(30, 115, 218, 0.3);
+  background: linear-gradient(135deg, #4ECDC4, #1E73DA);
+}
+
+.btn-voltar i {
+  font-size: 1.1rem;
+  transition: transform 0.3s ease;
+}
+
+.btn-voltar:hover i {
+  transform: translateX(-3px);
+}
+
+.service-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--primaria-clara);
+  font-weight: bold;
+  transition: color 0.3s;
+  margin: 0 auto;
+  text-align: center;
+}
